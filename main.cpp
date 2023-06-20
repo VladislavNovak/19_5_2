@@ -85,6 +85,20 @@ void readFile(const char* fileName) {
     fileReader.close();
 }
 
+void readFileAsText(const char* fileName) {
+    std::string textLine;
+
+    cout << "Файл найден. Открываю...\n------------------------" << endl;
+
+    std::ifstream fileReader;
+    fileReader.open(fileName);
+    while (std::getline(fileReader, textLine)) {
+        cout << textLine << endl;
+    }
+
+    fileReader.close();
+}
+
 int main() {
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
@@ -106,7 +120,10 @@ int main() {
         cout << "Полный путь до файла: " << pathToFile << endl;
 
         if (isFileExist(pathToFile)) {
-            readFile(pathToFile);
+            // Можем открыть и как бинарный файл:
+            // readFile(pathToFile);
+            // Можем открыть и считать построчно:
+            readFileAsText(pathToFile);
             continueWithSuccess = true;
         } else {
             std::cout << "Неверно. Указанного файла не обнаружено" << std::endl;
