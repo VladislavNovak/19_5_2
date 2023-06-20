@@ -57,6 +57,8 @@
 
 [Ещё раз про setlocale и SetConsoleCP](http://blog.kislenko.net/show.php?id=1356)
 
+[Metanit. Чтение и запись текстовых файлов](https://metanit.com/cpp/tutorial/8.3.php)
+
 [Лекции по C/C++: работа с файлами (fstream)](http://blog.kislenko.net/show.php?id=1402)
 
 [Работа с файлами в C++. Часть 1 – Библиотека fstream](https://purecodecpp.com/archives/2751)
