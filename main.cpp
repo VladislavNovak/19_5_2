@@ -68,6 +68,7 @@ bool isFileExist(const char* fileName) {
     return isExist;
 }
 
+// Альтернатива функции readFileAsText
 void readFile(const char* fileName) {
     long long bufferSize = 20;
     char* buffer = new char[bufferSize + 1];
